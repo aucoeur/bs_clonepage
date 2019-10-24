@@ -23,16 +23,21 @@ a, btn-watch {
     text-transform: uppercase;
 }
 
+a {
+    color: black;
+    background-color: transparent;
+}
+
 .jumbotron-bg {
-    position: relative;
     background: rgba(255, 255, 255, 0.2);
     /* If our image is bright, we can tone it down with this darker overlay */
     background: url('img/jumbo_hero_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
     height: 100%;
     width: 100%;
-    padding: 300px;
+    padding: 200px;
 }
 
 .video-bg {
@@ -41,13 +46,14 @@ a, btn-watch {
     background: url('img/video_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
     height: 100%;
     width: 100%;
-    padding: 200px;
+    padding: 150px
 }
 
 .red-box {
-    background-color: red;
+    background-color: #c80707;
     position: relative;
     padding: 25px;
 }
@@ -57,6 +63,10 @@ p {
     text-transform: none;
     text-align: center;
     margin-top: 25px;
+}
+
+h3 {
+    text-align: center;
 }
 
 .btn-dark {
@@ -92,4 +102,11 @@ p {
   font-weight: normal;
   color:#ffffff;
   opacity: 1;
+}
+
+.card, .card-red {
+    background-color: #c80707;
+    color: black;
+    border-color: black;
+    text-align: center;
 }
