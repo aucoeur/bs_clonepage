@@ -9,16 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/37ff4a1043.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">B O U L E T B R O T H E R S D R A G U L A</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
         </button>
-
+        <a class="navbar-brand" href="/">
+            Boulet Brothers Dragula</a>
+    </nav>
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
@@ -29,13 +34,48 @@
                 </li>
             </ul>
             <form class="form-inline my-2 mr-sm-0">
-                <input class="form-control form-control-sm my-sm-2 bg-dark" type="search" placeholder="Search"
-                    aria-label="Search">&nbsp;
-                <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit">Search</button>
+                <!-- <input class="form-control form-control-sm my-sm-2 bg-dark" type="search" placeholder="Search"
+                    aria-label="Search">&nbsp; -->
+                <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit"><i
+                        class="fas fa-search"></i></button>
             </form>&nbsp;&nbsp;
-            <a href=""><i class="fas fa-shopping-cart" style="color: white"></i></a>
+            <a href="#"><i class="fas fa-shopping-cart" style="color: white"></i></a>
         </div>
     </nav>
+
+    <div class="jumbotron jumbotron-fluid jumbotron-bg">
+    </div>
+
+    <div class="container p-4">
+        <div class="d-flex justify-content-center red-box">
+            <div class="align-self-center align-items-center">
+                <h3>BOULET BROTHERS DRAGULA SEASON 3</h3>
+                <p>Meet the cast of The Boulet Brothers Dragula Season 3!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-4">
+        <div class="video-bg d-flex justify-content-center">
+            <button class="btn btn-dark btn-lg video btn-watch"
+                data-video="https://www.youtube.com/embed/Q1Ma4PNUyYk" data-toggle="modal"
+                data-target="#videoModal"><i class="fas fa-play-circle"></i> Watch the Season 3 trailer here</button>
+            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <iframe width="100%" height="480" src="" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -45,6 +85,20 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $(".video").click(function () {
+                var theModal = $(this).data("target"),
+                    videoSRC = $(this).attr("data-video"),
+                    videoSRCauto = videoSRC +
+                    "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+                $(theModal + ' iframe').attr('src', videoSRCauto);
+                $(theModal + ' button.close').click(function () {
+                    $(theModal + ' iframe').attr('src', videoSRC);
+                });
+            });
+        });
     </script>
 </body>
 
