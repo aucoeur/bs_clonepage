@@ -23,9 +23,18 @@ a, btn-watch {
     text-transform: uppercase;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unica One';
+}
+
 a {
     color: black;
     background-color: transparent;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .jumbotron-bg {
@@ -109,4 +118,21 @@ h3 {
     color: black;
     border-color: black;
     text-align: center;
+}
+
+.merch-red:hover {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.06);
+}
+
+.card-right {
+    text-align: left;
+}
+
+.normal {
+    color: white;
+}
+
+.normal:hover{
+    color: black;
 }
