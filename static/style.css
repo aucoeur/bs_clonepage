@@ -3,7 +3,7 @@
 }
 
 .navbar-brand {
-    font-family: 'Unica One', cursive;
+    font-family: 'Unica One';
     font-size: 20px;
     letter-spacing: 0.1em;
     color: white;
@@ -37,7 +37,7 @@ a {
     background-position: top center;
     height: 100%;
     width: 100%;
-    padding: 200px;
+    padding: 300px;
 }
 
 .video-bg {
