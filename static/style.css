@@ -123,7 +123,14 @@ h3 {
 .card-red {
     background-color: #c80707;
     color: black;
+    border-color: transparent;
+    text-align: center;
+}
+
+.black-border {
     border-color: black;
+    background-color: #c80707;
+    color: black;
     text-align: center;
 }
 
