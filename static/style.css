@@ -106,6 +106,7 @@ h3 {
 .modal-body {
     position: relative;
     padding: 0px;
+    max-height: 480px;
 }
 
 .close {
@@ -155,16 +156,16 @@ h3 {
     font-family: 'Unica One';
     font-size: 20px;
     letter-spacing: 0.1em;
-    color: rgba(248,6,6,0.6);
+    color: rgba(248, 6, 6, 0.6);
 }
 
 .small {
     font-family: 'Karla';
     font-size: 14px;
     text-transform: none;
-    color:  #c80707;
+    color: #c80707;
 }
 
 .fab {
-    color: rgba(248,6,6,0.6);
+    color: rgba(248, 6, 6, 0.6);
 }
